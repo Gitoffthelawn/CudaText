@@ -3,6 +3,9 @@
   - fixed
   * changed
 
+1.234.3 (2026/05)
+
+* change/add: ui-theme item 'EdCaret' replaced with 'EdCarets' which 1) allows 'none color' to re-use text-font-color, 2) has different logic - this color is the _final_ color of the caret (before it was a XOR-value)
 - fix: option "auto_fold_comments" did not work for multi-line string/comment if it begins after other tokens on a line (thanks @pintassilgo)
 
 1.234.2 (2026/04)
