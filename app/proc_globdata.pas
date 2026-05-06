@@ -4332,9 +4332,6 @@ initialization
 
   GlobalApplyPopupTheme:= @UpdateMenuTheming_PopupMenu_Win32;
 
-  {$ifdef LCLGtk3}
-  //ATCanvasPrimitives_InvertByPixels:= true;
-  {$endif}
 
 finalization
 
