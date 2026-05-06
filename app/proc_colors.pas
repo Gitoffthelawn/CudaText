@@ -316,6 +316,16 @@ begin
   end;
 end;
 
+procedure AppThemeInit_UI(var D: TAppTheme);
+  //
+  procedure SetColor(AId: TAppThemeColor; AColor: TColor; const AName, ADesc: string); inline;
+  begin
+    D.Colors[AId].color:= AColor;
+    D.Colors[AId].name:= AName;
+    D.Colors[AId].desc:= ADesc;
+    D.Colors[AId].CanBeNone:= (AColor=clNone);
+  end;
+  //
 const
   nColorText = $202020;
   nColorBack = $e4e4e4;
@@ -327,17 +337,6 @@ const
   nColorListBack = $b4d8a8;
   nColorListSelBack = $d0d0d0;
   nColorListSelBack2 = $f4f4f4;
-
-procedure AppThemeInit_UI(var D: TAppTheme);
-  //
-  procedure SetColor(AId: TAppThemeColor; AColor: TColor; const AName, ADesc: string); inline;
-  begin
-    D.Colors[AId].color:= AColor;
-    D.Colors[AId].name:= AName;
-    D.Colors[AId].desc:= ADesc;
-    D.Colors[AId].CanBeNone:= (AColor=clNone);
-  end;
-  //
 begin
   SetColor(TAppThemeColor.EdTextFont, nColorText, 'EdTextFont', 'editor, font');
   SetColor(TAppThemeColor.EdTextBg, nColorBack, 'EdTextBg', 'editor, BG');
@@ -486,7 +485,7 @@ procedure AppThemeInit_Syntax(var D: TAppTheme);
   end;
   //
 begin
-  SetStyle(TAppThemeStyle.Id, 'Id', nColorText, clNone, clNone, [], blNone, blNone, blNone, blNone, ftFontAttr);
+  SetStyle(TAppThemeStyle.Id, 'Id', clBlack, clNone, clNone, [], blNone, blNone, blNone, blNone, ftFontAttr);
   SetStyle(TAppThemeStyle.Id1, 'Id1', clNavy, clNone, clNone, [], blNone, blNone, blNone, blNone, ftFontAttr);
   SetStyle(TAppThemeStyle.Id2, 'Id2', clPurple, clNone, clNone, [], blNone, blNone, blNone, blNone, ftFontAttr);
   SetStyle(TAppThemeStyle.Id3, 'Id3', clOlive, clNone, clNone, [], blNone, blNone, blNone, blNone, ftFontAttr);
