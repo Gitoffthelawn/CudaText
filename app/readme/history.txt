@@ -3,6 +3,9 @@
   - fixed
   * changed
 
+- fix: tab-bar drag&drop must not activate when pressing on <>+v buttons or on tab-close buttons
+- fix: lexer YAML: fix rule for lines with leading '-'
+
 1.234.3 (2026/05)
 
 * change/add: UI-theme field 'EdCaret' (in the theme files in the folder "data/themes") is ignored now. New field is 'EdCarets' (with final 's'). New field supports value 'none color' (which is default) - it will re-use the text font color. New field sets the _final_ color of the caret (before it was a XOR-value), so you can set now e.g. red or green caret. (thanks @SN-CH)
