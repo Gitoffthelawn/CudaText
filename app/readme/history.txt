@@ -4,7 +4,7 @@
   * changed
 
 - fix: lexer HTML: fix highlight of SVG blocks
-- fix: lexer HTML: rule for text after "<tag param=" did not handle complex webpage of Krita editor
+- fix: lexer HTML: rework several rules, before it did not handle complex webpage of Krita editor
 - fix: lexer YAML: fix rule for lines with leading '-'
 
 1.234.3 (2026/05)
