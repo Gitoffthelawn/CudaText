@@ -255,11 +255,11 @@ object SyntAnal8: TLibSyntAnalyzer
       ColumnTo = 0
     end
     item
-      DisplayName = 'Tag id'
+      DisplayName = 'Tag param val'
       StyleName = 'Tag unknown text'
       BlockName = 'Tag begin'
       TokenType = 2
-      Expression = '(?r)[\w\-\.\#/][\w\-:\./\+\?]*'
+      Expression = '(?r)[\w\-\.\#/][\w\-:;\./\+\?%\(\)]*'
       ColumnFrom = 0
       ColumnTo = 0
     end
@@ -910,7 +910,6 @@ object SyntAnal8: TLibSyntAnalyzer
     'x jsp hhc dtd'
   LexerName = 'HTML'
   Notes.Strings = (
-    'Created by 480499497 from forum.wincmd.ru (named HTML_dev)'
-    'Fully reworked by Alexey Torgashin (CudaText)')
+    'Alexey Torgashin (CudaText)')
   Charset = DEFAULT_CHARSET
 end
