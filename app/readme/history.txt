@@ -3,6 +3,8 @@
   - fixed
   * changed
 
+- fix: lexer HTML: highlight of SVG blocks was broken
+- fix: lexer HTML: rule for text after '<tag param=' did not support Unicode and some punctuation
 - fix: lexer YAML: fix rule for lines with leading '-'
 
 1.234.3 (2026/05)
